@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>CC.AspNetCustomErrors</id>
+    <version>1.0.0</version>
+    <title>CC.AspNetCustomErrors</title>
+    <authors>Jeremy Cook</authors>
+    <owners>Jeremy Cook</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <projectUrl>https://github.com/jeremycook/CC.AspNetCustomErrors</projectUrl>
+    <iconUrl>http://cookscode.com/cooks-code-logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Get ASP.NET and IIS custom error pages right. Install this package and then customize the pages in the Error folder to match the look of your site.</description>
+    <releaseNotes>First release.</releaseNotes>
+    <copyright>Copyright 2014</copyright>
+    <tags>asp.net mvc webforms iis error handling</tags>
+  </metadata>
+  <files>
+    <file src="Error\*" target="content\Error" />
+    <file src="*.xdt" target="content" />
+  </files>
+</package>

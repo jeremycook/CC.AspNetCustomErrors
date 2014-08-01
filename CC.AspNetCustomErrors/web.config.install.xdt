@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.web>
+    <customErrors mode="On" redirectMode="ResponseRewrite" xdt:Transform="Insert">
+      <error statusCode="400" redirect="~/Error/400.aspx"/>
+      <error statusCode="403" redirect="~/Error/403.aspx"/>
+      <error statusCode="404" redirect="~/Error/404.aspx"/>
+      <error statusCode="500" redirect="~/Error/500.aspx"/>
+    </customErrors>
+  </system.web>
+
+  <system.webServer>
+    <httpErrors errorMode="Custom" xdt:Transform="Insert">
+      <remove statusCode="400" />
+      <error statusCode="400" path="/Error/400.aspx" responseMode="ExecuteURL"/>
+      <remove statusCode="403" />
+      <error statusCode="403" path="/Error/403.aspx" responseMode="ExecuteURL"/>
+      <remove statusCode="404" />
+      <error statusCode="404" path="/Error/404.aspx" responseMode="ExecuteURL"/>
+      <remove statusCode="500" />
+      <error statusCode="500" path="/Error/500.aspx" responseMode="ExecuteURL"/>
+    </httpErrors>
+  </system.webServer>
+</configuration>
