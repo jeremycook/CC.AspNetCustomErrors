@@ -46,6 +46,7 @@
     <Content Include="Error\Error.Master" />
     <Content Include="web.config.install.xdt" />
     <Content Include="web.config.uninstall.xdt" />
+    <Content Include="Error\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
